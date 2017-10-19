@@ -1,0 +1,9 @@
+<shop class="da" ng-repeat="item in name" item="item" index="{{$index}}"></shop>
+<div class="cho">
+    <h1><span class="all" ng-class="{allon:flag}" ng-click="ha()" ></span><span >全选</span></h1>
+
+    <h2><span class="total">合计：<span class="money">￥{{price}}</span></span><span></span><span>(不含运费)</span>
+    </h2>
+    <h3 class="buy">结算({{name.num}})</h3>
+</div>
+{{name}}

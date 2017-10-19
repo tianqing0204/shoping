@@ -1,0 +1,25 @@
+<!--
+<h1>{{name}}</h1>-->
+<!--
+<div class="items" ng-repeat="item in name">
+    <span id="itemChecked"
+          class="chose"
+          ng-class="{on:item.state}"
+          ng-click=""
+            ></span>
+    <div class="pic">
+        <img ng-src="{{item.image}}" alt="">
+    </div>
+    <div class="con">
+        <h1><span class="bicname">{{item.name}}</span></h1>
+    </div>
+</div>-->
+<ul >
+    <li class="checkbox"><span class=" chose" ng-class="{on:item.state}" ng-click="itemchecked(index)" type="checkbox"></span></li>
+    <li class="goods"><img ng-src="{{item.image}}" alt=""/><span>{{item.name}}</span></li>
+    <li class="price">{{item.price}}</li>
+    <li class="count"><span class="reduce" ng-click="itemcount('-')">-</span><span class="count-input tq"  >{{item.num}}</span><span class="add" ng-click="itemcount('+')">+</span></li>
+    <li class="subtotal">{{item.price}}</li>
+    <li class="operation"><span class="del" ng-click="delete(index)">删除</span></li>
+</ul>
+
